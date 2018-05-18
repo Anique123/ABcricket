@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>addmembersite</title>
+
+</head>
+<body>
+<h1>Opret medlem</h1>
+<form method="Post" th:action="@{/addMemberSite}">
+    <p>fornavn:</p>
+    <input   type="text"   th:field="${Member.FirstName}"   />
+    <p>Efternavn:</p>
+    <input   type="text"   th:field="${Member.LastName}"/>
+    <p>Adresse</p>
+    <input   type="text"   th:field="${Member.Adress}"/>
+    <p>postnummer:</p>
+    <input   type="text"   th:field="${Member.Zipcode}"/>
+    <p>By:</p>
+    <input   type="text"   th:field="${Member.City}"/>
+    <p>Tlf nummer:</p>
+    <input   type="text"   th:field="${Member.Phone}"/>
+    <p>Email:</p>
+    <input   type="text"   th:field="${Member.Email}"/>
+    <p>CPR:</p>
+    <input   type="text"   th:field="${Member.CPR}"/>
+
+    <input   type="submit"   value="Send"   />
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>addTrainingSite</title>
+
+</head>
+<body>
+<h1>Opret træning</h1>
+<form method="Post" th:action="@{/addTrainingSite}">
+    <p>Trænings Dato:</p>
+    <input   type="date"   th:field="${Training.date}"   />
+    <p>Starttidspunkt:</p>
+    <input   type="time"   th:field="${Training.startTime}"/>
+    <p>Sluttidspunkt:</p>
+    <input   type="time"   th:field="${Training.endTime}"/>
+
+    <input   type="submit"   value="Send"   />
+</form>
+</body>
+</html>
